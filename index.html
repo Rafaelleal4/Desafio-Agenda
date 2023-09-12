@@ -1,9 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    
-    </head>
-    <body>
-        
-    </body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+    <title>Agenda Telefônica</title>
+</head>
+<body>
+
+    <button id="botao-ExibirCadastro" class="butto" onclick="render()">Exibir Cadastros</button>
+    <div id="container">
+
+        <h2 id="titulo-principal">Agenda Telefônica</h2>
+
+        <div id="input-container">
+
+
+            <input type="text" id="input-user" name="input-user" class="input" placeholder="Nome Completo" required >
+
+
+            <input type="number" maxlength="11" id="input-TelF" name="input-TelF" class="input" placeholder="Telefone Fixo" required >
+
+
+            <input type="number" maxlength="11" id="input-TelCel" name="input-TelCel" class="input" placeholder="Telefone Celular" required >
+
+
+            <input type="text" id="input-imgLink" name="input-imgLink" class="input" placeholder="Imagem" required >
+
+
+            <input type="date" id="input-nascimento" name="input-nascimento" class="input" placeholder="Data de nascimento" required >
+
+
+            <input type="text" id="input-email" name="input-email" class="input" placeholder="E-mail" required >
+
+
+            <input type="number" maxlength="8" id="input-cEP" name="input-cEp" class="input" placeholder="CEP" required >
+
+
+            <input type="text" id="input-cidade" name="input-cidade" class="input" placeholder="Cidade" required >
+
+
+            <input type="text" id="input-insta" name="input-insta" class="input" placeholder="@Instagram" required >
+
+
+            <input type="text" id="input-Git" name="input-Git" class="input" placeholder="@Github" required >
+
+            <div id="div-msg">
+                <button id="botao-CadastrarUser" class="button" onclick="comporUser()">Adicionar Contato</button>
+                <div id="msg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="containerLista" class="hidden"></div>
+        <div id="cardLista" class="hidden"></div>
+
+</body>
 </html>
